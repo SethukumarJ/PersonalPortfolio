@@ -12,8 +12,8 @@
   --title-color: hsl(207, 4%, 16%);
   --text-color: hsl(207, 4%, 28%);
   --text-color-light: hsl(207, 4%, 56%);
-  --body-color: hsl(0, 0%, 100%);
-  --container-color: hsl(210, 7%, 84%);;
+  --body-color: hsl(180, 3%, 83%);
+  --container-color: hsl(172, 6%, 75%);;
 
   /* Change the first number */
   /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
@@ -59,6 +59,10 @@
 }
 
 /*=============== BASE ===============*/
+.spanh{
+    color:rgb(23, 140, 236);
+    font-weight: bold;
+}
 * {
   box-sizing: border-box;
   padding: 0;
