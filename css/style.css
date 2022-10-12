@@ -316,7 +316,7 @@ body.dark-theme {
 .home__title{
     text-align: center;
     font-size: var(--biggest-font-size);
-    font-weigt:bold;
+    font-weight:bold;
     letter-spacing: 3px;
     margin-bottom: .5rem;
 }
@@ -345,10 +345,10 @@ body.dark-theme {
     justify-content:center;
     align-items: flex-end;
 }
-
-.home__profile img{
-    width: 170px;
-}
+ 
+ .home__profile img{
+    width: 400px;
+} 
 
 /* .home__shape-waves, */
 .home__shape-circle{
@@ -1149,7 +1149,7 @@ skills__title i{
     }
 
     .home__profile img{
-        width: 320px;
+        width: 340px;
     }
 
     .home__shape-circle{
