@@ -12,8 +12,8 @@
   --title-color: hsl(207, 4%, 16%);
   --text-color: hsl(207, 4%, 28%);
   --text-color-light: hsl(207, 4%, 56%);
-  --body-color: hsl(180, 3%, 83%);
-  --container-color: hsl(172, 6%, 75%);;
+  --body-color: hsl(180, 12%, 95%);
+  --container-color: hsl(170, 10%, 88%);;
 
   /* Change the first number */
   /* Blue: 207 - Purple: 250 - Pink: 356 - Teal: 174 */
