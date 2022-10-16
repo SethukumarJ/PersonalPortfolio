@@ -58,7 +58,28 @@ const contactForm = document.getElementById('contact-form'),
       contactName = document.getElementById('contact-name'),
       contactEmail = document.getElementById('contact-email'),
       contactProject = document.getElementById('contact-project'),
-      contactMessage = document.getElementById('contact-message')
+      contactMessage = document.getElementById('contact-message'),
+      contactNames = document.getElementById('contact-names'),
+      contactEmails = document.getElementById('contact-emails')
+    //   let nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+   let emailValidity = function emailValidator(){
+        let countAt,countSpace
+        for(let i=0; i<contactEmail.value.length; i++){
+            if(contactEmail.value[i]==='@'){
+                countAt++
+            }
+            else if(contactEmails.value[i]===' '){
+                countSpace++
+            }
+        }
+        if(countAt ===1&&countSpace === 0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
 const sendEmail = (e) =>{
     e.preventDefault()
@@ -71,13 +92,49 @@ const sendEmail = (e) =>{
 
         //Show message
         contactMessage.textContent = 'Write all the input fields'
-    }else{
+    }
+    
+
+    else if(emailValidity ===true){
+
+        contactEmails.classList.remove('color-blue')
+        contactEmails.classList.add('color-red')
+        contactEmails.textContent = 'Invalid email'
+
+    }
+   
+     else if( 
+             contactName.value[0] ===  '0'||
+             contactName.value[0] ===  '1'||
+             contactName.value[0] ===  '2'||
+             contactName.value[0] ===  '3'||
+             contactName.value[0] ===  '4'||
+             contactName.value[0] ===  '5'||
+             contactName.value[0] ===  '6'||
+             contactName.value[0] ===  '7'||
+             contactName.value[0] ===  '8'||
+             contactName.value[0] ===  '9'){
+
+            contactNames.classList.remove('color-blue')
+            contactNames.classList.add('color-red')
+            contactNames.textContent = 'Enter valid name'
+        }
+       else if( contactName.value[0] ===  ' '){
+        contactNames.classList.remove('color-blue')
+            contactNames.classList.add('color-red')
+            contactNames.textContent = 'Remove space in the beggining'
+
+       }
+
+   
+    else{
         //serviceID - templateID - #form - publicKey
 
         emailjs.sendForm('service_0gk5wgw','template_tdbfvtu','#contact-form','cyMf1BNNBI3YZcr68')
         .then(() => {
             //show message and add color
-            contactMessage.classList.add('color-blue')
+            contactMessage.classList.remove('color-blue')
+            contactMessage.classList.add('color-green')
             contactMessage.textContent = 'Message sent'
 
             //Remove message after five seconds

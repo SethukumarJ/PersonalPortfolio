@@ -824,6 +824,12 @@ skills__title i{
     bottom: 2.8rem;
     left: 1.5rem;
 }
+#contact-names, #contact-emails{
+    position: relative;
+    font-size: var(--small-font-size);
+    bottom: 40px;
+    left: 25px;
+}
 /* Status color */
 
 .color-red{
