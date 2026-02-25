@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sethukumar J | Software Engineer Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%2338bdf8'/><stop offset='100%25' stop-color='%23818cf8'/></linearGradient></defs><text x='50' y='68' font-family='system-ui, sans-serif' font-size='50' font-weight='bold' fill='url(%23g)' text-anchor='middle'>S</text></svg>">
+    <title>Sethukumar J | Software Engineer</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%2338bdf8'/><stop offset='100%25' stop-color='%23818cf8'/></linearGradient></defs><text x='50' y='68' font-family='system-ui, sans-serif' font-size='50' font-weight='bold' fill='url(%23g)' text-anchor='middle'>S</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script>
@@ -21,15 +23,25 @@
         }
     </script>
     <style>
-        body { background-color: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif; }
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+        }
+
         .gradient-text {
             background: linear-gradient(to right, #38bdf8, #818cf8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .hover-scale:hover { transform: scale(1.02); transition: all 0.3s ease-in-out; }
+
+        .hover-scale:hover {
+            transform: scale(1.02);
+            transition: all 0.3s ease-in-out;
+        }
     </style>
 </head>
+
 <body class="antialiased selection:bg-primary selection:text-white">
 
     <nav class="fixed w-full z-50 bg-darkBg/90 backdrop-blur-md border-b border-gray-800">
@@ -50,55 +62,89 @@
         </div>
     </nav>
 
-    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between min-h-screen">
+    <section id="hero"
+        class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between min-h-screen gap-12">
         <div class="md:w-3/5 space-y-6">
             <p class="text-primary font-mono text-lg">Hi, my name is</p>
             <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight">Sethukumar J.</h1>
             <h2 class="text-3xl md:text-5xl font-bold text-gray-400">I build high-performance backend systems.</h2>
             <p class="text-gray-400 text-lg max-w-2xl leading-relaxed">
-                I'm a passionate Software Engineer based in Bangalore, specializing in scalable, cloud-native architectures, and microservices. I optimize workflows, reduce latency, and occasionally mentor aspiring developers to build the next generation of software.
+                I'm a passionate Software Engineer based in Bangalore, specializing in scalable, cloud-native
+                architectures, and microservices. I optimize workflows, reduce latency, and occasionally mentor aspiring
+                developers to build the next generation of software.
             </p>
             <div class="pt-4 flex space-x-4">
-                <a href="#contact" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-sky-600 transition-colors">Get In Touch</a>
-                <a href="https://github.com/SethukumarJ" target="_blank" class="border border-gray-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"><i class="fab fa-github mr-2"></i>GitHub</a>
+                <a href="#contact"
+                    class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-sky-600 transition-colors">Get
+                    In Touch</a>
+                <a href="https://github.com/SethukumarJ" target="_blank"
+                    class="border border-gray-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"><i
+                        class="fab fa-github mr-2"></i>GitHub</a>
+            </div>
+        </div>
+        <div class="md:w-2/5 flex justify-center md:justify-end">
+            <div class="relative">
+                <div
+                    class="w-48 h-48 md:w-72 md:h-72 rounded-2xl border-2 border-primary/20 overflow-hidden bg-cardBg p-2">
+                    <img src="images/profile.png" alt="Sethukumar J"
+                        class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-500">
+                </div>
+                <!-- Decorative element -->
+                <div
+                    class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-primary/30 rounded-br-2xl -z-10">
+                </div>
             </div>
         </div>
     </section>
 
     <section id="about" class="py-20 bg-cardBg px-4">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 flex items-center"><span class="text-primary mr-3 font-mono">01.</span> About Me</h2>
+            <h2 class="text-3xl font-bold mb-8 flex items-center"><span class="text-primary mr-3 font-mono">01.</span>
+                About Me</h2>
             <div class="text-gray-300 space-y-4 leading-relaxed text-lg">
-                <p>Over the past 3+ years, I have deeply immersed myself in backend development, currently working at <strong>Geospot Media Pvt Ltd</strong>. My core focus lies in Golang, where I architect high-performance backend applications and optimize complex data pipelines.</p>
-                <p>Beyond building software, I am dedicated to sharing knowledge. I serve as a <strong>Part-Time Mentor at Brototype</strong>, where I guide students in the software domain, helping them bridge the gap between academic concepts and production-ready engineering.</p>
+                <p>Over the past 3+ years, I have deeply immersed myself in backend development, currently working at
+                    <strong>Geospot Media Pvt Ltd</strong>. My core focus lies in Golang, where I architect
+                    high-performance backend applications and optimize complex data pipelines.
+                </p>
+                <p>Beyond building software, I am dedicated to sharing knowledge. I serve as a <strong>Part-Time Mentor
+                        at Brototype</strong>, where I guide students in the software domain, helping them bridge the
+                    gap between academic concepts and production-ready engineering.</p>
             </div>
         </div>
     </section>
 
     <section id="experience" class="py-20 px-4 max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 flex items-center"><span class="text-primary mr-3 font-mono">02.</span> Experience</h2>
+        <h2 class="text-3xl font-bold mb-12 flex items-center"><span class="text-primary mr-3 font-mono">02.</span>
+            Experience</h2>
         <div class="space-y-12 border-l-2 border-gray-800 ml-3 pl-8 relative">
-            
+
             <div class="relative">
                 <div class="absolute -left-[41px] bg-darkBg border-2 border-primary w-5 h-5 rounded-full mt-1.5"></div>
-                <h3 class="text-xl font-bold text-white">Software Engineer <span class="text-primary">@ Geospot Media Pvt Ltd</span></h3>
+                <h3 class="text-xl font-bold text-white">Software Engineer <span class="text-primary">@ Geospot Media
+                        Pvt Ltd</span></h3>
                 <p class="text-sm text-gray-400 font-mono mb-4">Present | Bangalore</p>
                 <ul class="list-disc text-gray-300 ml-4 space-y-2">
-                    <li>Re-architected the RTB bidder infrastructure, transitioning from SQL to a hybrid in-memory caching system (Golang & Aerospike).</li>
-                    <li>Successfully reduced internal processing latency by over 50%, achieving a highly optimized 2ms response time for bid requests with 1 million QPS</li>
-                    <li>Engineered high-throughput, real-time reporting pipelines capable of processing over a billion records per ingestion cycle.</li>
+                    <li>Re-architected the RTB bidder infrastructure, transitioning from SQL to a hybrid in-memory
+                        caching system (Golang & Aerospike).</li>
+                    <li>Successfully reduced internal processing latency by over 50%, achieving a highly optimized 2ms
+                        response time for bid requests with 1 million QPS</li>
+                    <li>Engineered high-throughput, real-time reporting pipelines capable of processing over a billion
+                        records per ingestion cycle.</li>
                 </ul>
             </div>
 
             <div class="relative">
                 <div class="absolute -left-[41px] bg-darkBg border-2 border-gray-600 w-5 h-5 rounded-full mt-1.5"></div>
-                <h3 class="text-xl font-bold text-white">Software Engineer <span class="text-primary">@ SellerApp</span></h3>
+                <h3 class="text-xl font-bold text-white">Software Engineer <span class="text-primary">@ SellerApp</span>
+                </h3>
                 <p class="text-sm text-gray-400 font-mono mb-4">2023 - 2024</p>
                 <ul class="list-disc text-gray-300 ml-4 space-y-2">
-                    <li>Developed real-time data ingestion pipelines using Firestore, Cloud Functions, and BigQuery.</li>
+                    <li>Developed real-time data ingestion pipelines using Firestore, Cloud Functions, and BigQuery.
+                    </li>
                     <li>Automated critical workflows utilizing Google Cloud Workflows and Cloud Scheduler.</li>
                     <li>Built ETL processes syncing Firestore, BigQuery, and MongoDB.</li>
-                    <li>Implemented Amazon SP API throttling & token caching using Redis, and successfully onboarded apps to the ONDC Network.</li>
+                    <li>Implemented Amazon SP API throttling & token caching using Redis, and successfully onboarded
+                        apps to the ONDC Network.</li>
                 </ul>
             </div>
 
@@ -114,11 +160,14 @@
             </div> -->
 
             <div class="relative">
-                <div class="absolute -left-[41px] bg-darkBg border-2 border-purple-500 w-5 h-5 rounded-full mt-1.5"></div>
-                <h3 class="text-xl font-bold text-white">Part-time Mentor <span class="text-purple-400">@ Brototype</span></h3>
+                <div class="absolute -left-[41px] bg-darkBg border-2 border-purple-500 w-5 h-5 rounded-full mt-1.5">
+                </div>
+                <h3 class="text-xl font-bold text-white">Part-time Mentor <span class="text-purple-400">@
+                        Brototype</span></h3>
                 <p class="text-sm text-gray-400 font-mono mb-4">Software Domain</p>
                 <ul class="list-disc text-gray-300 ml-4 space-y-2">
-                    <li>Mentoring students in advanced software engineering practices, system design, and backend development.</li>
+                    <li>Mentoring students in advanced software engineering practices, system design, and backend
+                        development.</li>
                 </ul>
             </div>
 
@@ -127,7 +176,8 @@
 
     <section id="skills" class="py-20 bg-cardBg px-4">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 flex items-center"><span class="text-primary mr-3 font-mono">03.</span> Tech Stack</h2>
+            <h2 class="text-3xl font-bold mb-8 flex items-center"><span class="text-primary mr-3 font-mono">03.</span>
+                Tech Stack</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div class="bg-darkBg p-6 rounded-lg border border-gray-800 hover:border-primary transition-colors">
                     <h4 class="text-primary font-bold mb-3"><i class="fas fa-code mr-2"></i>Languages</h4>
@@ -135,7 +185,8 @@
                 </div>
                 <div class="bg-darkBg p-6 rounded-lg border border-gray-800 hover:border-primary transition-colors">
                     <h4 class="text-primary font-bold mb-3"><i class="fas fa-server mr-2"></i>Backend Expertise</h4>
-                    <p class="text-gray-400 text-sm">Domain Driven, Event Driven archietecture, ETL, Data Analytics, Ml/AI</p>
+                    <p class="text-gray-400 text-sm">Domain Driven, Event Driven archietecture, ETL, Data Analytics,
+                        Ml/AI</p>
                 </div>
                 <div class="bg-darkBg p-6 rounded-lg border border-gray-800 hover:border-primary transition-colors">
                     <h4 class="text-primary font-bold mb-3"><i class="fas fa-cloud mr-2"></i>Cloud & DevOps</h4>
@@ -143,24 +194,31 @@
                 </div>
                 <div class="bg-darkBg p-6 rounded-lg border border-gray-800 hover:border-primary transition-colors">
                     <h4 class="text-primary font-bold mb-3"><i class="fas fa-database mr-2"></i>Databases & Queues</h4>
-                    <p class="text-gray-400 text-sm">Mysql,PostgreSQL MongoDB, BigQuery,Clickhouse, Redis,Aerospike, RabbitMQ, Kafka</p>
+                    <p class="text-gray-400 text-sm">Mysql,PostgreSQL MongoDB, BigQuery,Clickhouse, Redis,Aerospike,
+                        RabbitMQ, Kafka</p>
                 </div>
             </div>
         </div>
     </section>
 
-<section id="blog" class="py-20 px-4 max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 flex items-center"><span class="text-primary mr-3 font-mono">04.</span> Featured Work & Writing</h2>
-        
+    <section id="blog" class="py-20 px-4 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 flex items-center"><span class="text-primary mr-3 font-mono">04.</span>
+            Featured Work & Writing</h2>
+
         <div class="grid md:grid-cols-2 gap-8">
-            <a href="https://blog.geospot.media/real-time-bidding-latency-optimization/" target="_blank" class="block bg-cardBg p-8 rounded-xl border border-gray-800 hover-scale relative overflow-hidden group">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+            <a href="https://blog.geospot.media/real-time-bidding-latency-optimization/" target="_blank"
+                class="block bg-cardBg p-8 rounded-xl border border-gray-800 hover-scale relative overflow-hidden group">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300">
+                </div>
                 <div class="flex justify-between items-center mb-4">
                     <i class="fas fa-newspaper text-3xl text-primary"></i>
                     <i class="fas fa-external-link-alt text-gray-500 group-hover:text-white transition-colors"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-3">Milliseconds Matter: Optimizing Bidder Latency</h3>
-                <p class="text-gray-400 mb-4 text-sm">An in-depth article on how we moved from standard SQL databases to a Go-based hybrid in-memory architecture (with Aerospike), cutting processing latency down to a blistering 2ms at high QPS.</p>
+                <p class="text-gray-400 mb-4 text-sm">An in-depth article on how we moved from standard SQL databases to
+                    a Go-based hybrid in-memory architecture (with Aerospike), cutting processing latency down to a
+                    blistering 2ms at high QPS.</p>
                 <div class="flex space-x-3 text-xs font-mono text-primary mt-auto">
                     <span>System Design</span>
                     <span>Golang</span>
@@ -169,14 +227,18 @@
                 </div>
             </a>
 
-            <a href="https://github.com/SethukumarJ/Events_Radar_Developement" target="_blank" class="block bg-cardBg p-8 rounded-xl border border-gray-800 hover-scale relative overflow-hidden group">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-blue-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+            <a href="https://github.com/SethukumarJ/Events_Radar_Developement" target="_blank"
+                class="block bg-cardBg p-8 rounded-xl border border-gray-800 hover-scale relative overflow-hidden group">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-blue-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300">
+                </div>
                 <div class="flex justify-between items-center mb-4">
                     <i class="fab fa-github text-3xl text-white"></i>
                     <i class="fas fa-external-link-alt text-gray-500 group-hover:text-white transition-colors"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-3">Events Radar API</h3>
-                <p class="text-gray-400 mb-4 text-sm">A comprehensive API for managing the structure and promotion of organizations and college events. Features secure JWT authentication and Razorpay integration.</p>
+                <p class="text-gray-400 mb-4 text-sm">A comprehensive API for managing the structure and promotion of
+                    organizations and college events. Features secure JWT authentication and Razorpay integration.</p>
                 <div class="flex flex-wrap gap-3 text-xs font-mono text-primary mt-auto">
                     <span>Go</span>
                     <span>Gin</span>
@@ -186,14 +248,19 @@
                 </div>
             </a>
 
-            <a href="https://github.com/SethukumarJ/FixItNow" target="_blank" class="block bg-cardBg p-8 rounded-xl border border-gray-800 hover-scale relative overflow-hidden group flex flex-col">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+            <a href="https://github.com/SethukumarJ/FixItNow" target="_blank"
+                class="block bg-cardBg p-8 rounded-xl border border-gray-800 hover-scale relative overflow-hidden group flex flex-col">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-red-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300">
+                </div>
                 <div class="flex justify-between items-center mb-4">
                     <i class="fas fa-tools text-3xl text-white"></i>
                     <i class="fas fa-external-link-alt text-gray-500 group-hover:text-white transition-colors"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-3">FixItNow Platform</h3>
-                <p class="text-gray-400 mb-4 text-sm flex-grow">A robust backend system architected for on-demand service and issue resolution. Designed using strict Clean Architecture principles to ensure high maintainability, decoupled business logic, and scalable performance.</p>
+                <p class="text-gray-400 mb-4 text-sm flex-grow">A robust backend system architected for on-demand
+                    service and issue resolution. Designed using strict Clean Architecture principles to ensure high
+                    maintainability, decoupled business logic, and scalable performance.</p>
                 <div class="flex flex-wrap gap-3 text-xs font-mono text-primary mt-auto">
                     <span>Golang</span>
                     <span>Microservices</span>
@@ -202,14 +269,19 @@
                 </div>
             </a>
 
-            <a href="https://github.com/SethukumarJ/Go-webRtc" target="_blank" class="block bg-cardBg p-8 rounded-xl border border-gray-800 hover-scale relative overflow-hidden group flex flex-col">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-400 to-emerald-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+            <a href="https://github.com/SethukumarJ/Go-webRtc" target="_blank"
+                class="block bg-cardBg p-8 rounded-xl border border-gray-800 hover-scale relative overflow-hidden group flex flex-col">
+                <div
+                    class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-400 to-emerald-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300">
+                </div>
                 <div class="flex justify-between items-center mb-4">
                     <i class="fas fa-broadcast-tower text-3xl text-white"></i>
                     <i class="fas fa-external-link-alt text-gray-500 group-hover:text-white transition-colors"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-3">Go-WebRTC Streaming</h3>
-                <p class="text-gray-400 mb-4 text-sm flex-grow">A low-latency real-time communication implementation building a signaling server in Golang. It effectively manages peer-to-peer connections for media streaming and data channel transfers using WebSockets and WebRTC protocols.</p>
+                <p class="text-gray-400 mb-4 text-sm flex-grow">A low-latency real-time communication implementation
+                    building a signaling server in Golang. It effectively manages peer-to-peer connections for media
+                    streaming and data channel transfers using WebSockets and WebRTC protocols.</p>
                 <div class="flex flex-wrap gap-3 text-xs font-mono text-primary mt-auto">
                     <span>Golang</span>
                     <span>WebRTC</span>
@@ -225,22 +297,28 @@
             <h2 class="text-sm font-mono text-primary mb-4">05. What's Next?</h2>
             <h2 class="text-4xl font-bold mb-6">Get In Touch</h2>
             <p class="text-gray-400 mb-10 text-lg">
-                Whether you have a question about backend optimization, want to discuss software mentorship, or simply want to say hi, my inbox is always open!
+                Whether you have a question about backend optimization, want to discuss software mentorship, or simply
+                want to say hi, my inbox is always open!
             </p>
-            
+
             <div class="flex justify-center space-x-6 mb-8">
-                <a href="https://www.linkedin.com/in/sethukumar-j-ba9442250/" target="_blank" class="text-gray-400 hover:text-white text-3xl transition-colors">
+                <a href="https://www.linkedin.com/in/sethukumar-j-ba9442250/" target="_blank"
+                    class="text-gray-400 hover:text-white text-3xl transition-colors">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/SethukumarJ" target="_blank" class="text-gray-400 hover:text-white text-3xl transition-colors">
+                <a href="https://github.com/SethukumarJ" target="_blank"
+                    class="text-gray-400 hover:text-white text-3xl transition-colors">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://github.com/sethusellerapp" target="_blank" class="text-gray-400 hover:text-white text-3xl transition-colors" title="SellerApp GitHub">
+                <a href="https://github.com/sethusellerapp" target="_blank"
+                    class="text-gray-400 hover:text-white text-3xl transition-colors" title="SellerApp GitHub">
                     <i class="fab fa-github-alt"></i>
                 </a>
             </div>
-            
-            <a href="mailto:your.email@example.com" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors inline-block">Say Hello</a>
+
+            <a href="mailto:sethukumarj.76@gmail.com"
+                class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-medium hover:bg-primary hover:text-white transition-colors inline-block">Say
+                Hello</a>
         </div>
     </section>
 
@@ -249,4 +327,5 @@
     </footer>
 
 </body>
+
 </html>
